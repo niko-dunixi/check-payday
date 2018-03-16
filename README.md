@@ -15,6 +15,19 @@ Dead simple because it's Go. Install by running:
 go install github.com/paul-nelson-baker/check-payday
 ```
 
+### Usage
+`$ check-payday --help`
+```
+Usage:
+  check-payday [OPTIONS]
+
+Application Options:
+  -d, --date= A given date that is a payday, all calculations will be based on this date. Must be in format YYYY-MM-DD with leading 0's. (First payday of the year is advisable, but the most recent will suffice.)
+
+Help Options:
+  -h, --help  Show this help message
+```
+
 ### Example
 ```bash
 #!/usr/bin/env bash
