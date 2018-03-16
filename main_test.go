@@ -22,13 +22,13 @@ func TestDaysCalculation(t *testing.T) {
 func TestCalculationOfRemainingDays(t *testing.T) {
 	firstPayDate := date.New(2018, 1, 5)
 	if days, _ := util.CalculatePayDayInfo(firstPayDate, firstPayDate.AddDays(1)); days != 13 {
-		t.Errorf("Incorrect number of days: %d", days)
+		t.Errorf("Incorrect number of days: %d, should have been 13", days)
 	}
 	if days, _ := util.CalculatePayDayInfo(firstPayDate, firstPayDate.AddDays(7)); days != 7 {
-		t.Errorf("Incorrect number of days: %d", days)
+		t.Errorf("Incorrect number of days: %d, should have been 7", days)
 	}
 	if days, _ := util.CalculatePayDayInfo(firstPayDate, firstPayDate.AddDays(14)); days != 0 {
-		t.Errorf("Incorrect number of days: %d", days)
+		t.Errorf("Incorrect number of days: %d, should have been 0", days)
 	}
 }
 
@@ -41,6 +41,6 @@ func TestCalculationOfIsPayday(t *testing.T) {
 		t.Errorf("Should not have been payday, but was calculated as such")
 	}
 	if _, isPayday := util.CalculatePayDayInfo(firstPayDate, firstPayDate.AddDays(14)); !isPayday {
-		t.Errorf("Should not have been payday, but was calculated as such")
+		t.Errorf("Should have been payday, but was calculated as not")
 	}
 }
