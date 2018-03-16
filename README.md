@@ -36,5 +36,5 @@ fi
 
 ### TODO
 - [x] Calculate days left until payday
-- [ ] Allow setting the initial date dynamically so other people can use it
+- [x] Allow setting the initial date dynamically so other people can use it
 - [ ] Restful API for gambling on horses
