@@ -24,7 +24,7 @@ func main() {
 		}
 		fmt.Printf("%d day%s until we get paid.\n", daysUntilPayDay, suffix)
 	} else {
-		fmt.Println("0 days until we get paid. IT'S PAYDAY!! :D")
+		fmt.Println("0 days until we get paid. Wait, IT'S PAYDAY!! :D")
 	}
 	// Only returns success (0) when it is payday
 	// Useful for shell scripts and automation that
