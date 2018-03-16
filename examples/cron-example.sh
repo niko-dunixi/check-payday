@@ -27,7 +27,7 @@ fi
 # Build the email string
 read -rd '' EMAIL_STR <<EOM
 To: ${EMAIL}
-Subject: $(check-payday)
+Subject: IT'S PAYDAY!!!
 From: ${EMAIL}
 
 It is indeed PAYDAY!
