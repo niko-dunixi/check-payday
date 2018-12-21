@@ -12,6 +12,7 @@ application exit code!
 ### Installation
 Dead simple because it's Go. Install by running:
 ```bash
+go get github.com/paul-nelson-baker/check-payday
 go install github.com/paul-nelson-baker/check-payday
 ```
 
