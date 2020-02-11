@@ -7,7 +7,7 @@ in `--interactive` mode (or with the `-i` flag) will print out a progress bar th
 seconds count down towards the next payday!
 
 ### Installation
-Dead simple because it's Go. Install by running:
+Dead simple because it's cargo. Install by running:
 ```bash
 cargo install --git https://github.com/paul-nelson-baker/check-payday
 ```
